@@ -1,0 +1,27 @@
+lemon_juice_cups = float(input('Enter amount of lemon juice (in cups):\n'))
+water_cups = float(input('Enter amount of water (in cups):\n'))
+agavenectar_cups = float(input('Enter amount of agave nectar (in cups):\n'))
+initial_amt_servings = float(input('How many servings does this make?\n'))
+print()
+
+print('Lemonade ingredients - yields','{:.2f}'.format(initial_amt_servings),'servings')
+print('{:.2f}'.format(lemon_juice_cups),'cup(s) lemon juice')
+print('{:.2f}'.format(water_cups),'cup(s) water')
+print('{:.2f}'.format(agavenectar_cups),'cup(s) agave nectar\n')
+
+final_amt_servings = float(input('How many servings would you like to make?\n'))
+print()
+
+print('Lemonade ingredients - yields','{:.2f}'.format(final_amt_servings),'servings')
+print('{:.2f}'.format((lemon_juice_cups)*(final_amt_servings/initial_amt_servings)),'cup(s) lemon juice')
+print('{:.2f}'.format((water_cups)*(final_amt_servings/initial_amt_servings)),'cup(s) water')
+print('{:.2f}'.format((agavenectar_cups)*(final_amt_servings/initial_amt_servings)),'cup(s) agave nectar\n')
+
+lemon_juice_galls = float(lemon_juice_cups*(final_amt_servings/initial_amt_servings) / 16)
+water_galls = float(water_cups*(final_amt_servings/initial_amt_servings)/ 16)
+agavenectar_galls = float(agavenectar_cups*(final_amt_servings/initial_amt_servings)/16)
+
+print('Lemonade ingredients - yields','{:.2f}'.format(final_amt_servings),'servings')
+print('{:.2f}'.format(lemon_juice_galls),'gallon(s) lemon juice')
+print('{:.2f}'.format(water_galls),'gallon(s) water')
+print('{:.2f}'.format(agavenectar_galls),'gallon(s) agave nectar')
